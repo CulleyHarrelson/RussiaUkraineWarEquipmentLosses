@@ -14,4 +14,5 @@ is merged with the class data from
 This dashboard uses [panel by holoviz](https://panel.holoviz.org/) and the [hvPlot](https://hvplot.holoviz.org/) [pandas](https://pandas.pydata.org/) extension.
 
 To start the dashboard, execute this command from your terminal:
-panel serve --show --autoreload RussiaUkraineWar.ipynb 
+
+panel serve --show --autoreload RussiaUkraineWar.py
