@@ -2,22 +2,38 @@ import pandas as pd
 import bokeh
 import hvplot.pandas
 import panel as pn
+import os
+import datetime
 
 pn.extension()
 
-classes_url = (
-    "https://raw.githubusercontent.com/leedrake5/Russia-Ukraine/main/data/classes.csv"
-)
-classes = pd.read_csv(classes_url)
+local_path = "oryx.csv"
 
-totals_by_systems_url = (
-    "https://raw.githubusercontent.com/scarnecchia/oryx_data/main/totals_by_system.csv"
-)
-totals_by_systems = pd.read_csv(totals_by_systems_url)
 
-oryx = pd.merge(
-    totals_by_systems, classes, how="inner", left_on="system", right_on="system"
-)
+def download_data(local_file_name):
+    classes_url = "https://raw.githubusercontent.com/leedrake5/Russia-Ukraine/main/data/classes.csv"
+    classes = pd.read_csv(classes_url)
+
+    totals_by_systems_url = "https://raw.githubusercontent.com/scarnecchia/oryx_data/main/totals_by_system.csv"
+    totals_by_systems = pd.read_csv(totals_by_systems_url)
+    return pd.merge(
+        totals_by_systems, classes, how="inner", left_on="system", right_on="system"
+    )
+
+
+# create a local copy of the data no more than once a day
+if os.path.exists(local_path):
+    file_age = datetime.datetime.now() - datetime.datetime.fromtimestamp(
+        os.path.getmtime(local_path)
+    )
+    if file_age > datetime.timedelta(days=1):
+        oryx = download_data(local_path)
+        oryx.to_csv(local_path, index=False)
+    else:
+        oryx = pd.read_csv(local_path)
+else:
+    oryx = download_data(local_path)
+    oryx.to_csv(local_path, index=False)
 
 oryx["date_recorded"] = pd.to_datetime(oryx["date_recorded"])
 oryx["class"] = oryx["class"].astype("category")
@@ -31,36 +47,36 @@ russia_color = "#0057b7"
 
 
 # overall plot
-classes = oryx.groupby(["class", "Country"]).agg(count=("url", "count"))
-overall_plot = classes.hvplot(
-    kind="barh",
-    stacked=True,
-    height=600,
-    width=920,
-    legend="bottom_right",
-    title="Overall Equipment Losses",
-    color=[ukraine_color, russia_color],
-)
-overall_plot
+def overall_plot(df):
+    classes = df.groupby(["class", "Country"]).agg(count=("url", "count"))
+    return classes.hvplot(
+        kind="barh",
+        stacked=True,
+        height=600,
+        width=920,
+        legend="bottom_right",
+        title="Overall Equipment Losses",
+        color=[ukraine_color, russia_color],
+    )
 
-step_one = oryx.groupby(["date_recorded", "Country"], as_index=False).count()
-step_two = pd.pivot_table(
-    step_one, values="country_x", index="date_recorded", columns="Country"
-)
-cumulative_losses_plot = step_two.cumsum().hvplot.line(
-    x="date_recorded",
-    y=["Ukraine", "Russia"],
-    # value_label='Equipment Lost',
-    legend="top",
-    height=600,
-    width=920,
-    xlabel="Date Recorded",
-    ylabel="Equipment Lost",
-    title="Cumulative Losses",
-    color=[ukraine_color, russia_color],
-)
 
-cumulative_losses_plot
+def cumulative_losses_plot(df):
+    step_one = df.groupby(["date_recorded", "Country"], as_index=False).count()
+    step_two = pd.pivot_table(
+        step_one, values="country_x", index="date_recorded", columns="Country"
+    )
+    return step_two.cumsum().hvplot.line(
+        x="date_recorded",
+        y=["Ukraine", "Russia"],
+        # value_label='Equipment Lost',
+        legend="top",
+        height=600,
+        width=920,
+        xlabel="Date Recorded",
+        ylabel="Equipment Lost",
+        title="Cumulative Losses",
+        color=[ukraine_color, russia_color],
+    )
 
 
 # step_two.cumsum().to_csv('daily_losses.csv')
@@ -95,21 +111,21 @@ review and extend the source code.
 
 bootstrap.sidebar.append(pn.Spacer(height=20))
 bootstrap.sidebar.append(md)
-
 accordion = pn.Accordion(
     (
         "High-level line chart visualizing the growth of equipment losses over time.",
-        cumulative_losses_plot,
+        cumulative_losses_plot(oryx),
     ),
-    ("Bar chart summarizing equipment losses by equipment category.", overall_plot),
+    (
+        "Bar chart summarizing equipment losses by equipment category.",
+        overall_plot(oryx),
+    ),
 )
-# int
+
 accordion.width = 920
 accordion.active = [0]
-#bootstrap.main.append(equipment_class_list)
 bootstrap.main.append(accordion)
-# bootstrap.main.append(cumulative_losses_plot)
-# bootstrap.main.append(pn.Spacer(height=20))
-# bootstrap.main.append(overall_plot)
-
 bootstrap.servable()
+
+# Start the dashboard from your terminal with:
+#   panel serve --show --autoreload RussiaUkraineWar.py
