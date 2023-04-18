@@ -6,11 +6,11 @@ import os
 import datetime
 
 pn.extension()
-
 local_path = "oryx.csv"
 
 
-def download_data(local_file_name):
+def download_data():
+    """Download and merge csv files"""
     classes_url = "https://raw.githubusercontent.com/leedrake5/Russia-Ukraine/main/data/classes.csv"
     classes = pd.read_csv(classes_url)
 
@@ -27,12 +27,12 @@ if os.path.exists(local_path):
         os.path.getmtime(local_path)
     )
     if file_age > datetime.timedelta(days=1):
-        oryx = download_data(local_path)
+        oryx = download_data()
         oryx.to_csv(local_path, index=False)
     else:
         oryx = pd.read_csv(local_path)
 else:
-    oryx = download_data(local_path)
+    oryx = download_data()
     oryx.to_csv(local_path, index=False)
 
 oryx["date_recorded"] = pd.to_datetime(oryx["date_recorded"])
@@ -48,6 +48,7 @@ russia_color = "#0057b7"
 
 # overall plot
 def overall_plot(df):
+    """Return horizontal bar plot plot grouped by equipment class"""
     classes = df.groupby(["class", "Country"]).agg(count=("url", "count"))
     return classes.hvplot(
         kind="barh",
@@ -60,8 +61,9 @@ def overall_plot(df):
     )
 
 
-def cumulative_losses_plot(df):
-    step_one = df.groupby(["date_recorded", "Country"], as_index=False).count()
+def cumulative_losses_plot(oryx):
+    """Return cumulative losses plot for the whole dataset"""
+    step_one = oryx.groupby(["date_recorded", "Country"], as_index=False).count()
     step_two = pd.pivot_table(
         step_one, values="country_x", index="date_recorded", columns="Country"
     )
@@ -79,7 +81,22 @@ def cumulative_losses_plot(df):
     )
 
 
-# step_two.cumsum().to_csv('daily_losses.csv')
+overall_plot = overall_plot(oryx)
+cumulative_losses_plot = cumulative_losses_plot(oryx)
+
+equipment_class_select = pn.widgets.Select(
+    name="Equipment Class", options=oryx["class"].unique().tolist()
+)
+
+
+# Function to update the plots based on the selected equipment class
+def update_plots(event):
+    selected_class = event.new
+    filtered_data = oryx[oryx["class"] == selected_class]
+
+
+equipment_class_select.param.watch(update_plots, "value")
+
 
 # bootstrap = pn.template.BootstrapTemplate(title='Minecraft Summary Stats')
 bootstrap = pn.template.BootstrapTemplate(
@@ -87,7 +104,7 @@ bootstrap = pn.template.BootstrapTemplate(
     theme=pn.template.bootstrap.BootstrapDarkTheme,
 )
 
-md = pn.pane.Markdown(
+sidebar_md = pn.pane.Markdown(
     """
 This dashboard tracks equipment lost during the Russia-Ukraine War. 
 Data for this project is ultimately sourced from [oryx](https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html).
@@ -109,22 +126,34 @@ review and extend the source code.
 """
 )
 
+useage_md = pn.pane.Markdown(
+    """
+Plots in the above accordion use the entire oryx dataset - click the triangles to
+view the graphs.  Use the dropdown list below to adjust the plots blow for the 
+selected equipment class.
+"""
+)
+useage_md.width = 920
+useage_md.margin = 10
+
 bootstrap.sidebar.append(pn.Spacer(height=20))
-bootstrap.sidebar.append(md)
+bootstrap.sidebar.append(sidebar_md)
 accordion = pn.Accordion(
     (
         "High-level line chart visualizing the growth of equipment losses over time.",
-        cumulative_losses_plot(oryx),
+        cumulative_losses_plot,
     ),
     (
         "Bar chart summarizing equipment losses by equipment category.",
-        overall_plot(oryx),
+        overall_plot,
     ),
 )
 
 accordion.width = 920
-accordion.active = [0]
+# accordion.active = [0]
 bootstrap.main.append(accordion)
+bootstrap.main.append(useage_md)
+bootstrap.main.append(equipment_class_select)
 bootstrap.servable()
 
 # Start the dashboard from your terminal with:
