@@ -81,6 +81,28 @@ def cumulative_losses_plot(oryx):
     )
 
 
+def cumulative_losses_by_class_plot(oryx):
+    """Return cumulative losses plot for a given equipment class"""
+    step_one = oryx.groupby(["date_recorded", "Country"], as_index=False).count()
+    step_two = pd.pivot_table(
+        step_one[step_one["class"] == "tanks"],
+        values="country_x",
+        index="date_recorded",
+        columns="Country",
+    )
+    return step_two.cumsum().hvplot.line(
+        x="date_recorded",
+        y=["Ukraine", "Russia"],
+        legend="top",
+        height=600,
+        width=920,
+        xlabel="Date Recorded",
+        ylabel="Equipment Lost",
+        title="Cumulative Losses",
+        color=[ukraine_color, russia_color],
+    )
+
+
 overall_plot = overall_plot(oryx)
 cumulative_losses_plot = cumulative_losses_plot(oryx)
 
@@ -154,6 +176,7 @@ accordion.width = 920
 bootstrap.main.append(accordion)
 bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
+# bootstrap.main.append(cumulative_losses_by_class_plot(oryx))
 bootstrap.servable()
 
 # Start the dashboard from your terminal with:
