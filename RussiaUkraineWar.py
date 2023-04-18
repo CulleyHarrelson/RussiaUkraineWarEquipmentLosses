@@ -42,8 +42,8 @@ oryx["system"] = oryx["system"].astype("category")
 oryx["origin"] = oryx["origin"].astype("category")
 oryx.rename(columns={"country_y": "Country"}, inplace=True)
 oryx.interactive()
-ukraine_color = "#b94d4d"
-russia_color = "#0057b7"
+UKRAINE_COLOR = "#b94d4d"
+RUSSIA_COLOR = "#0057b7"
 
 
 # overall plot
@@ -57,7 +57,7 @@ def overall_plot(df):
         width=920,
         legend="bottom_right",
         title="Overall Equipment Losses",
-        color=[ukraine_color, russia_color],
+        color=[UKRAINE_COLOR, RUSSIA_COLOR],
     )
 
 
@@ -77,7 +77,7 @@ def cumulative_losses_plot(oryx):
         xlabel="Date Recorded",
         ylabel="Equipment Lost",
         title="Cumulative Losses",
-        color=[ukraine_color, russia_color],
+        color=[UKRAINE_COLOR, RUSSIA_COLOR],
     )
 
 
@@ -99,7 +99,7 @@ def cumulative_losses_by_class_plot(oryx):
         xlabel="Date Recorded",
         ylabel="Equipment Lost",
         title="Cumulative Losses",
-        color=[ukraine_color, russia_color],
+        color=[UKRAINE_COLOR, RUSSIA_COLOR],
     )
 
 
@@ -178,6 +178,3 @@ bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
 # bootstrap.main.append(cumulative_losses_by_class_plot(oryx))
 bootstrap.servable()
-
-# Start the dashboard from your terminal with:
-#   panel serve --show --autoreload RussiaUkraineWar.py

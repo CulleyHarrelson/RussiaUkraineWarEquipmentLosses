@@ -13,7 +13,7 @@ is merged with the class data from
 
 This dashboard uses [panel by holoviz](https://panel.holoviz.org/) and the [hvPlot](https://hvplot.holoviz.org/) [pandas](https://pandas.pydata.org/) extension.
 
-To start the dashboard, open your terminal, navigate somewhere special and
+To start the dashboard, open your terminal, navigate to a good folder and
 execute these commands:
 
     git clone https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses.git
