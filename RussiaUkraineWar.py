@@ -81,11 +81,16 @@ def cumulative_losses_plot(oryx):
     )
 
 
-def cumulative_losses_by_class_plot(oryx):
+def cumulative_losses_by_class_plot(oryx, equipment_class):
     """Return cumulative losses plot for a given equipment class"""
-    step_one = oryx.groupby(["date_recorded", "Country"], as_index=False).count()
+    step_one = (
+        oryx[oryx["class"] == equipment_class]
+        .groupby(["date_recorded", "Country"], as_index=False)
+        .count()
+    )
     step_two = pd.pivot_table(
-        step_one[step_one["class"] == "tanks"],
+        # step_one[step_one["class"] == "tanks"],
+        step_one,
         values="country_x",
         index="date_recorded",
         columns="Country",
@@ -97,24 +102,27 @@ def cumulative_losses_by_class_plot(oryx):
         height=600,
         width=920,
         xlabel="Date Recorded",
-        ylabel="Equipment Lost",
-        title="Cumulative Losses",
+        ylabel="{} Lost".format(equipment_class),
+        title="Cumulative Losses: {}".format(equipment_class),
         color=[UKRAINE_COLOR, RUSSIA_COLOR],
     )
 
 
 overall_plot = overall_plot(oryx)
 cumulative_losses_plot = cumulative_losses_plot(oryx)
+initial_plot = cumulative_losses_by_class_plot(oryx, "Tanks")
+cl_class_plot_panel = pn.pane.HoloViews(initial_plot)
 
 equipment_class_select = pn.widgets.Select(
-    name="Equipment Class", options=oryx["class"].unique().tolist()
+    name="Equipment Class", options=oryx["class"].unique().tolist(), value="Tanks"
 )
 
 
 # Function to update the plots based on the selected equipment class
 def update_plots(event):
     selected_class = event.new
-    filtered_data = oryx[oryx["class"] == selected_class]
+    new_plot = cumulative_losses_by_class_plot(oryx, selected_class)
+    cl_class_plot_panel.object = new_plot
 
 
 equipment_class_select.param.watch(update_plots, "value")
@@ -176,5 +184,5 @@ accordion.width = 920
 bootstrap.main.append(accordion)
 bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
-# bootstrap.main.append(cumulative_losses_by_class_plot(oryx))
+bootstrap.main.append(cl_class_plot_panel)
 bootstrap.servable()
