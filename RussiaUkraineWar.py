@@ -5,7 +5,7 @@ import panel as pn
 import os
 import datetime
 
-pn.extension()
+pn.extension("tabulator", css_files=[pn.io.resources.CSS_URLS["font-awesome"]])
 local_path = "oryx.csv"
 
 
@@ -108,10 +108,43 @@ def cumulative_losses_by_class_plot(oryx, equipment_class):
     )
 
 
+# this one is showing the same count for Ukraine/Russie on any give class
+def system_count_plot(oryx, equipment_class):
+    """Return horizontal bar plot of systems count in the chosen equipment class"""
+    # systems_count = (
+    # oryx[oryx["class"] == equipment_class]
+    # .groupby(["system", "Country"])
+    # .agg(count=("url", "count"))
+    # )
+
+    systems_count = (
+        oryx[oryx["class"] == equipment_class]
+        .groupby(["system", "country_x"])
+        .agg(count=("url", "count"))
+    )
+
+    systems_count = systems_count[systems_count["count"] > 0]
+    return systems_count.hvplot(
+        kind="barh",
+        stacked=True,
+        height=800,
+        width=920,
+        legend="bottom_right",
+        xlabel=f"{equipment_class} Type",
+        title=f"Types of {equipment_class}",
+        color=[RUSSIA_COLOR, UKRAINE_COLOR],
+    )
+
+
 overall_plot = overall_plot(oryx)
 cumulative_losses_plot = cumulative_losses_plot(oryx)
 initial_plot = cumulative_losses_by_class_plot(oryx, DEFAULT_CLASS)
 cl_class_plot_panel = pn.pane.HoloViews(initial_plot)
+initial_system_count_plot = system_count_plot(oryx, DEFAULT_CLASS)
+system_count_plot_panel = pn.pane.HoloViews(initial_system_count_plot)
+
+
+tabulator = pn.widgets.Tabulator(oryx)
 
 equipment_class_select = pn.widgets.Select(
     name="Equipment Class", options=oryx["class"].unique().tolist(), value=DEFAULT_CLASS
@@ -122,7 +155,9 @@ equipment_class_select = pn.widgets.Select(
 def update_plots(event):
     selected_class = event.new
     new_plot = cumulative_losses_by_class_plot(oryx, selected_class)
+    new_system_count_plot = system_count_plot(oryx, selected_class)
     cl_class_plot_panel.object = new_plot
+    system_count_plot_panel.object = new_system_count_plot
 
 
 equipment_class_select.param.watch(update_plots, "value")
@@ -185,4 +220,9 @@ bootstrap.main.append(accordion)
 bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
 bootstrap.main.append(cl_class_plot_panel)
+bootstrap.main.append(pn.Spacer(height=20))
+bootstrap.main.append(system_count_plot_panel)
+bootstrap.main.append(pn.Spacer(height=20))
+# bootstrap.main.append(tabulator)
+
 bootstrap.servable()
