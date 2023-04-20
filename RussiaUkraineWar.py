@@ -42,8 +42,9 @@ oryx["system"] = oryx["system"].astype("category")
 oryx["origin"] = oryx["origin"].astype("category")
 oryx.rename(columns={"country_y": "Country"}, inplace=True)
 oryx.interactive()
-UKRAINE_COLOR = "#b94d4d"
-RUSSIA_COLOR = "#0057b7"
+UKRAINE_COLOR = "#0057b7"
+RUSSIA_COLOR = "#b94d4d"
+DEFAULT_CLASS = "Tanks"
 
 
 # overall plot
@@ -89,7 +90,6 @@ def cumulative_losses_by_class_plot(oryx, equipment_class):
         .count()
     )
     step_two = pd.pivot_table(
-        # step_one[step_one["class"] == "tanks"],
         step_one,
         values="country_x",
         index="date_recorded",
@@ -110,11 +110,11 @@ def cumulative_losses_by_class_plot(oryx, equipment_class):
 
 overall_plot = overall_plot(oryx)
 cumulative_losses_plot = cumulative_losses_plot(oryx)
-initial_plot = cumulative_losses_by_class_plot(oryx, "Tanks")
+initial_plot = cumulative_losses_by_class_plot(oryx, DEFAULT_CLASS)
 cl_class_plot_panel = pn.pane.HoloViews(initial_plot)
 
 equipment_class_select = pn.widgets.Select(
-    name="Equipment Class", options=oryx["class"].unique().tolist(), value="Tanks"
+    name="Equipment Class", options=oryx["class"].unique().tolist(), value=DEFAULT_CLASS
 )
 
 
