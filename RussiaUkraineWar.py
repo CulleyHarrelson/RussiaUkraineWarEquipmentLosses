@@ -5,13 +5,14 @@ import panel as pn
 import os
 import datetime
 
-pn.extension("tabulator", css_files=[pn.io.resources.CSS_URLS["font-awesome"]])
+# pn.extension("tabulator", css_files=[pn.io.resources.CSS_URLS["font-awesome"]])
+# pn.extension("bootstrap", "dark")
 local_path = "oryx.csv"
 
 
 def download_data():
     """Download and merge csv files"""
-    classes_url = "https://raw.githubusercontent.com/leedrake5/Russia-Ukraine/main/data/classes.csv"
+    classes_url = "https://raw.githubusercontent.com/leedrake5/Russia-Ukraine/main/data/classes_old.csv"
     classes = pd.read_csv(classes_url)
 
     totals_by_systems_url = "https://raw.githubusercontent.com/scarnecchia/oryx_data/main/totals_by_system.csv"
@@ -111,11 +112,6 @@ def cumulative_losses_by_class_plot(oryx, equipment_class):
 # this one is showing the same count for Ukraine/Russie on any give class
 def system_count_plot(oryx, equipment_class):
     """Return horizontal bar plot of systems count in the chosen equipment class"""
-    # systems_count = (
-    # oryx[oryx["class"] == equipment_class]
-    # .groupby(["system", "Country"])
-    # .agg(count=("url", "count"))
-    # )
 
     systems_count = (
         oryx[oryx["class"] == equipment_class]
@@ -143,16 +139,25 @@ cl_class_plot_panel = pn.pane.HoloViews(initial_plot)
 initial_system_count_plot = system_count_plot(oryx, DEFAULT_CLASS)
 system_count_plot_panel = pn.pane.HoloViews(initial_system_count_plot)
 
+initial_country_counts = (
+    oryx[oryx["class"] == DEFAULT_CLASS]
+    .groupby(["country_x"])
+    .agg(count=("url", "count"))
+)
 
-tabulator = pn.widgets.Tabulator(oryx)
+russia_class_count = pn.indicators.Number(
+    name=f"Russia: {DEFAULT_CLASS}",
+    value=initial_country_counts.loc["Russia", "count"],
+    css_classes=["text-white", "bg-dark", "border", "border-secondary", "rounded"],
+)
 
 equipment_class_select = pn.widgets.Select(
     name="Equipment Class", options=oryx["class"].unique().tolist(), value=DEFAULT_CLASS
 )
 
 
-# Function to update the plots based on the selected equipment class
 def update_plots(event):
+    """Function to update the plots based on the selected equipment class"""
     selected_class = event.new
     new_plot = cumulative_losses_by_class_plot(oryx, selected_class)
     new_system_count_plot = system_count_plot(oryx, selected_class)
@@ -163,7 +168,6 @@ def update_plots(event):
 equipment_class_select.param.watch(update_plots, "value")
 
 
-# bootstrap = pn.template.BootstrapTemplate(title='Minecraft Summary Stats')
 bootstrap = pn.template.BootstrapTemplate(
     title="Russia-Ukraine War Equipment Loss Statistics",
     theme=pn.template.bootstrap.BootstrapDarkTheme,
@@ -215,14 +219,14 @@ accordion = pn.Accordion(
 )
 
 accordion.width = 920
-# accordion.active = [0]
 bootstrap.main.append(accordion)
 bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
+bootstrap.main.append(pn.Spacer(height=20))
+# bootstrap.main.append(russia_class_count)
 bootstrap.main.append(cl_class_plot_panel)
 bootstrap.main.append(pn.Spacer(height=20))
 bootstrap.main.append(system_count_plot_panel)
 bootstrap.main.append(pn.Spacer(height=20))
-# bootstrap.main.append(tabulator)
 
 bootstrap.servable()
