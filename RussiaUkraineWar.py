@@ -169,13 +169,13 @@ equipment_class_select.param.watch(update_plots, "value")
 
 
 bootstrap = pn.template.BootstrapTemplate(
-    title="Russia-Ukraine War Equipment Loss Statistics",
+    title="Russian War in Ukraine Equipment Loss Statistics",
     theme=pn.template.bootstrap.BootstrapDarkTheme,
 )
 
 sidebar_md = pn.pane.Markdown(
     """
-This dashboard tracks equipment lost during the Russia-Ukraine War. 
+This dashboard tracks equipment lost during the Russian war in Ukraine. 
 Data for this project is ultimately sourced from [oryx](https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html).
 From the oryx website:
 
