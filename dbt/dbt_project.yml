@@ -1,0 +1,31 @@
+name: "dbt_equipment_losses"
+version: "1.0.0"
+config-version: 2
+
+profile: "dbt_equipment_losses"
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["data"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_equipment_losses:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    mart:
+      +materialized: table
+
+seeds:
+  dbt_equipment_losses:
+    equipment_losses:
+      +column_types:
+        date_recorded: date

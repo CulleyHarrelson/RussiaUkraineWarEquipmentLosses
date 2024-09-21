@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dbt_equipment_losses # This should match your database name
+    schema: public # This should match the schema where your seed data will be loaded
+    tables:
+      - name: equipment_losses
+        description: "Raw data of equipment losses"

@@ -1,6 +1,10 @@
 oryx.csv
 totals_by_system.csv
 
+*.log
+
+dbt/data/*
+dbt/logs/*
 
 .ipynb_checkpoints/
 .venv/
