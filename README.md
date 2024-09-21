@@ -1,7 +1,12 @@
-# RussiaUkraineWarEquipmentLosses
-![preview image](images/dashboard_screenshot1.png)
+# TOC
 
-This dashboard tracks equipment lost during Russia's war in Ukraine. 
+- dbt - dbt transformations to explore the dataset with postgreSQL
+- panel+pandas - the first exploration of the dataset, using panel and pandas.
+
+# dbt
+
+Data transformations and enrichment project with dbt and postgreSQL
+
 Data for this project is ultimately sourced from [oryx](https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html).
 From the oryx website:
 
@@ -10,6 +15,11 @@ From the oryx website:
 The screen scrape from [scarnecchia's](https://github.com/scarnecchia) [Scrape Oryx](https://github.com/scarnecchia/scrape_oryx) project 
 is merged with the class data from
 [leedrake5's](https://github.com/leedrake5) [Russia-Ukraine](https://github.com/leedrake5/Russia-Ukraine) project.  
+
+## Panel dashboard
+
+My first pass through the dataset resulted in the panel dashboard, leveraging pandas for the analysis.  The dbt sub-project is doing similar work with dbt.
+
 
 This dashboard uses [panel by holoviz](https://panel.holoviz.org/) and the [hvPlot](https://hvplot.holoviz.org/) [pandas](https://pandas.pydata.org/) extension.
 
