@@ -46,6 +46,8 @@ oryx.interactive()
 UKRAINE_COLOR = "#0057b7"
 RUSSIA_COLOR = "#b94d4d"
 DEFAULT_CLASS = "Tanks"
+min_date = oryx["date_recorded"].min()
+max_date = oryx["date_recorded"].max()
 
 
 # overall plot
@@ -155,6 +157,21 @@ equipment_class_select = pn.widgets.Select(
     name="Equipment Class", options=oryx["class"].unique().tolist(), value=DEFAULT_CLASS
 )
 
+values = (datetime.datetime(2021, 3, 2, 12, 10), datetime.datetime(2021, 3, 2, 12, 22))
+datetime_range_picker = pn.widgets.DatetimeRangePicker(
+    name="Datetime Range Picker", value=values
+)
+date_range_slider = pn.widgets.DateRangeSlider(
+    name="Date Range",
+    start=min_date,
+    end=max_date,
+    # start=datetime.datetime(2021, 1, 1),
+    # end=datetime.datetime(2023, 1, 1),
+    # value=(datetime.datetime(2021, 4, 1), datetime.datetime(2022, 1, 10)),
+    value=(min_date, max_date),
+    step=24 * 3600 * 2 * 1000,
+)
+
 
 def update_plots(event):
     """Function to update the plots based on the selected equipment class"""
@@ -222,6 +239,7 @@ accordion.width = 920
 bootstrap.main.append(accordion)
 bootstrap.main.append(useage_md)
 bootstrap.main.append(equipment_class_select)
+bootstrap.main.append(date_range_slider)
 bootstrap.main.append(pn.Spacer(height=20))
 # bootstrap.main.append(russia_class_count)
 bootstrap.main.append(cl_class_plot_panel)

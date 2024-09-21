@@ -1,7 +1,7 @@
 # RussiaUkraineWarEquipmentLosses
 ![preview image](images/dashboard_screenshot1.png)
 
-This dashboard tracks equipment lost during the Russia-Ukraine War. 
+This dashboard tracks equipment lost during Russia's war in Ukraine. 
 Data for this project is ultimately sourced from [oryx](https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html).
 From the oryx website:
 
