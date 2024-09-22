@@ -5,6 +5,8 @@ totals_by_system.csv
 
 dbt/data/*
 dbt/logs/*
+dbt/target/*
+dbt/.env
 
 .ipynb_checkpoints/
 .venv/
