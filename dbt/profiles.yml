@@ -3,10 +3,10 @@ dbt_equipment_losses:
   outputs:
     dev:
       type: postgres
-      host: localhost
-      user: culley
-      pass: ""
+      host: "localhost"
+      user: "{{ env_var('DBT_USER') }}"
+      pass: "{{ env_var('DBT_PASS') }}"
       port: 5432
-      dbname: dbt_equipment_losses
+      dbname: "dbt_equipment_losses"
       schema: public
       threads: 4
