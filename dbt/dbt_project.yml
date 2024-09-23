@@ -17,12 +17,6 @@ clean-targets:
 
 models:
   dbt_equipment_losses:
-    staging:
-      +materialized: view
-    intermediate:
-      +materialized: table
-    mart:
-      +materialized: table
     system_category:
       +materialized: view
     cumulative_losses:
@@ -37,6 +31,3 @@ seeds:
     equipment_losses:
       +column_types:
         date_recorded: date
-
-vars:
-  json_helpers: "{{ modules.json_helpers }}"
