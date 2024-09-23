@@ -1,5 +1,6 @@
 oryx.csv
 totals_by_system.csv
+.DS_Store
 
 *.log
 
