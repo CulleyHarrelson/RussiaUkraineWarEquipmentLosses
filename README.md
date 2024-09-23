@@ -1,3 +1,5 @@
+![Cumulative Losses](images/cumulative_losses.png)
+
 Data for this project is ultimately sourced from [oryx](https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html).
 From the oryx website:
 
