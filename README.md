@@ -9,7 +9,7 @@ The screen scrape from [scarnecchia's](https://github.com/scarnecchia) [Scrape O
 is merged with the class data from
 [leedrake5's](https://github.com/leedrake5) [Russia-Ukraine](https://github.com/leedrake5/Russia-Ukraine) project.  
 
-# TOC
+# Contents
 
 - dbt - dbt transformations to explore the dataset with postgreSQL
 - artifacts - the artifacts folder contains output visualizations and datasets
