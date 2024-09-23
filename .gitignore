@@ -3,7 +3,7 @@ totals_by_system.csv
 
 *.log
 
-dbt/data/*
+dbt/data
 !dbt/data/system_category.json
 dbt/logs/*
 dbt/target/*
