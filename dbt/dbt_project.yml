@@ -23,9 +23,20 @@ models:
       +materialized: table
     mart:
       +materialized: table
+    system_category:
+      +materialized: view
+    cumulative_losses:
+      +materialized: view
+    unknown_equipment:
+      +materialized: view
+    equipment_analysis:
+      +materialized: table
 
 seeds:
   dbt_equipment_losses:
     equipment_losses:
       +column_types:
         date_recorded: date
+
+vars:
+  json_helpers: "{{ modules.json_helpers }}"
