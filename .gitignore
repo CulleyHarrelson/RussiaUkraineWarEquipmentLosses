@@ -8,6 +8,7 @@ dbt/data/*
 dbt/logs/*
 dbt/target/*
 dbt/.env
+dbt/dbt_packages/
 dbt/.user.yml
 
 .ipynb_checkpoints/

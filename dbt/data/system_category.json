@@ -1,11 +1,11 @@
 [
   {
     "system": "'Orlan-20' ''Kartograf'' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "'Orlan-20' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "(Unknown) truck",
@@ -121,7 +121,7 @@
   },
   {
     "system": "1 1K148 \"Yastreb-AV\" artillery reconnaissance complex",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "1 1L119 Nebo-SVU VHF multi-functional radar",
@@ -437,7 +437,7 @@
   },
   {
     "system": "1 BREM-D armored recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 BREM-L armoured recovery vehicle",
@@ -537,15 +537,15 @@
   },
   {
     "system": "1 DAF YAD 4442 NT with Zastava M75 AA gun",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Daewoo Novus",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Defiant patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Eleron 10",
@@ -657,19 +657,19 @@
   },
   {
     "system": "1 Iveco LAV III",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Iveco LMV Rys",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Iveco Magirus 90-16 AW 4x4",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Iveco VM90",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 KTO Rosomak",
@@ -821,7 +821,7 @@
   },
   {
     "system": "1 LuAZ-969",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "1 Luch Korsar UCAV",
@@ -901,7 +901,7 @@
   },
   {
     "system": "1 MAZ-5337 fuel tanker",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 MAZ-6317",
@@ -973,15 +973,15 @@
   },
   {
     "system": "1 MTO-AG-3M",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 MTO-AT mobile workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 MTP-A2.1 recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Malloy Aeronautics T150 cargo UAV",
@@ -997,7 +997,7 @@
   },
   {
     "system": "1 Mercedes-Benz Unimog U1300L ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Mi-8/17",
@@ -1009,7 +1009,7 @@
   },
   {
     "system": "1 Mobile field bathhouse based on MAZ-6317 chassis",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Mobile generator for Podlet-K1 low-altitude S-band surveillance radar",
@@ -1021,11 +1021,11 @@
   },
   {
     "system": "1 NASAMS launcher",
-    "predicted_category": "Unknown"
+    "predicted_category": "Air Defense System"
   },
   {
     "system": "1 Oncilla",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Oraln UAV control station",
@@ -1101,11 +1101,11 @@
   },
   {
     "system": "1 Palantin electronic warfare system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "1 Panthera T6",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Penguin C reconnaissance UAV",
@@ -1141,7 +1141,7 @@
   },
   {
     "system": "1 Primoco One 150",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "1 Project 11356R Admiral Grigorovich-class frigate",
@@ -1153,7 +1153,7 @@
   },
   {
     "system": "1 Project 12411 Tarantul-III-class corvette",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Project 1258 Yevgenya Class minesweeper 'Henichesk'",
@@ -1173,11 +1173,11 @@
   },
   {
     "system": "1 Project 22160 large patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Project 22800 Karakurt-class corvette",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Project 266M Natya-class minesweeper",
@@ -1189,7 +1189,7 @@
   },
   {
     "system": "1 Project KS-701 'Tunets' coast guard patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Project T-63M Kostromich-class tug boat",
@@ -1201,7 +1201,7 @@
   },
   {
     "system": "1 Punisher",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "1 Quantum Vector UAV",
@@ -1281,7 +1281,7 @@
   },
   {
     "system": "1 RLK-MC-A (ROSC-1) counter-UAV system",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "1 RMMV HX 4x4",
@@ -1301,11 +1301,11 @@
   },
   {
     "system": "1 Raybird-3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "1 Remdiesel Z-STS \"Akhmat\"",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Renault TRM-2000",
@@ -1349,7 +1349,7 @@
   },
   {
     "system": "1 Stenka-class patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 Stormer HVM",
@@ -1489,19 +1489,19 @@
   },
   {
     "system": "1 UAZ-31514",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "1 UAZ-3153",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "1 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "1 UAZ-515195 'Esaul'",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "1 UMP-350 engine heater",
@@ -1509,7 +1509,7 @@
   },
   {
     "system": "1 UMS 600 patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "1 UR-77 Meteorit",
@@ -1525,7 +1525,7 @@
   },
   {
     "system": "1 Unknown EW system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "1 Unknown Forpost variant",
@@ -1581,7 +1581,7 @@
   },
   {
     "system": "1 Unknown fighter jet",
-    "predicted_category": "Unknown"
+    "predicted_category": "Combat Aircraft"
   },
   {
     "system": "1 Unknown fixed-wing aircraft",
@@ -1589,7 +1589,7 @@
   },
   {
     "system": "1 Unknown fuel tanker",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 Unknown pickup",
@@ -1677,7 +1677,7 @@
   },
   {
     "system": "1 ZALA Z-20",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "1 ZS-82 PsyOps vehicle",
@@ -1685,7 +1685,7 @@
   },
   {
     "system": "1 ZSA-Т Armoured Ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "1 ZiL-130",
@@ -1713,7 +1713,7 @@
   },
   {
     "system": "10 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "10 100mm MT-12 anti-tank gun",
@@ -1861,7 +1861,7 @@
   },
   {
     "system": "10 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "10 RKhM-6 Povozka CBRN reconnaissance vehicle",
@@ -1885,11 +1885,11 @@
   },
   {
     "system": "10 UAZ-3303",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "10 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "10 UAZ-452 van",
@@ -1921,7 +1921,7 @@
   },
   {
     "system": "10 ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "10 ZiL-131",
@@ -2641,7 +2641,7 @@
   },
   {
     "system": "11 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "11 100mm MT-12 anti-tank gun",
@@ -2797,7 +2797,7 @@
   },
   {
     "system": "11 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "11 RKhM-6 Povozka CBRN reconnaissance vehicle",
@@ -2829,11 +2829,11 @@
   },
   {
     "system": "11 UAZ-3303",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "11 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "11 UAZ-452 van",
@@ -2845,7 +2845,7 @@
   },
   {
     "system": "11 Unknown helicopter",
-    "predicted_category": "Unknown"
+    "predicted_category": "Helicopter"
   },
   {
     "system": "11 Unknown towed artillery",
@@ -3441,7 +3441,7 @@
   },
   {
     "system": "12 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "12 100mm MT-12 anti-tank gun",
@@ -3617,7 +3617,7 @@
   },
   {
     "system": "12 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "12 UAZ-452 van",
@@ -4249,7 +4249,7 @@
   },
   {
     "system": "13 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "13 120mm 2B16 Nona-K gun mortar",
@@ -4413,7 +4413,7 @@
   },
   {
     "system": "13 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "13 UAZ-452 van",
@@ -4953,7 +4953,7 @@
   },
   {
     "system": "14 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "14 100mm MT-12 anti-tank gun",
@@ -5089,7 +5089,7 @@
   },
   {
     "system": "14 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "14 UAZ-452 van",
@@ -5473,7 +5473,7 @@
   },
   {
     "system": "15 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "15 100mm MT-12 anti-tank gun",
@@ -6065,7 +6065,7 @@
   },
   {
     "system": "16 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "16 100mm MT-12 anti-tank gun",
@@ -6217,7 +6217,7 @@
   },
   {
     "system": "16 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "16 UAZ-452 van",
@@ -6557,7 +6557,7 @@
   },
   {
     "system": "17 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "17 100mm MT-12 anti-tank gun",
@@ -7025,7 +7025,7 @@
   },
   {
     "system": "18 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "18 100mm MT-12 anti-tank gun",
@@ -7149,7 +7149,7 @@
   },
   {
     "system": "18 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "18 UAZ-452 van",
@@ -7381,7 +7381,7 @@
   },
   {
     "system": "19 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "19 100mm MT-12 anti-tank gun",
@@ -7489,7 +7489,7 @@
   },
   {
     "system": "19 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "19 UAZ-452 van",
@@ -7857,7 +7857,7 @@
   },
   {
     "system": "2 1K148 \"Yastreb-AV\" artillery reconnaissance complex",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "2 1L119 Nebo-SVU VHF multi-functional radar",
@@ -7985,7 +7985,7 @@
   },
   {
     "system": "2 BMM-80 ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 BMP-1 765-SB3KDZ",
@@ -8097,7 +8097,7 @@
   },
   {
     "system": "2 Daewoo Novus",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Early warning SHF radar Voronezh DM:",
@@ -8161,7 +8161,7 @@
   },
   {
     "system": "2 ITEC Skif",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Il-22 airborne command post",
@@ -8169,11 +8169,11 @@
   },
   {
     "system": "2 Iveco LMV",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Iveco VM90",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 KamAZ 6x4",
@@ -8261,7 +8261,7 @@
   },
   {
     "system": "2 LuAZ-969",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "2 M1083A1P2 armored cargo truck",
@@ -8333,19 +8333,19 @@
   },
   {
     "system": "2 MTO-AT mobile workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 MTO-UB1 maintenance vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 MTP-A2.1 recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 MZA-M.1 battery charge and repair workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Mara-2M",
@@ -8365,19 +8365,19 @@
   },
   {
     "system": "2 NASAMS launcher",
-    "predicted_category": "Unknown"
+    "predicted_category": "Air Defense System"
   },
   {
     "system": "2 Oncilla",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Orlan-10 UCAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Orlik",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Aircraft"
   },
   {
     "system": "2 Oshkosh FMTV M1083A1P2 truck",
@@ -8417,15 +8417,15 @@
   },
   {
     "system": "2 Palantin electronic warfare system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "2 Panthera T6",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Penguin C",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Pinzgauer Vector 718",
@@ -8433,15 +8433,15 @@
   },
   {
     "system": "2 Primoco One 150",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Project 22800 Karakurt-class corvette",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "2 Punisher",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 R-145BM command vehicle",
@@ -8457,7 +8457,7 @@
   },
   {
     "system": "2 RLK-MC-A (ROSC-1) counter-UAV system",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 RQ-35 Heidrun",
@@ -8465,11 +8465,11 @@
   },
   {
     "system": "2 Raybird-3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Remdiesel Z-STS \"Akhmat\"",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Roshel Senator",
@@ -8477,7 +8477,7 @@
   },
   {
     "system": "2 SKAT 350",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 ST-68U radar",
@@ -8489,7 +8489,7 @@
   },
   {
     "system": "2 SpecAero",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Spectator-M1 reconnaissance UAV",
@@ -8577,11 +8577,11 @@
   },
   {
     "system": "2 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 Transitional link pontoon (for floating unified railway bridge-ribbon MLZh-VF-VT)",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Tu-22M3 strategic bomber",
@@ -8597,19 +8597,19 @@
   },
   {
     "system": "2 UAZ-3151",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "2 UAZ-31514",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "2 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "2 UAZ-394511 ‘Esaul’",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "2 Uknown T-64",
@@ -8625,7 +8625,7 @@
   },
   {
     "system": "2 Unknown EW system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "2 Unknown HMMWV variant",
@@ -8653,19 +8653,19 @@
   },
   {
     "system": "2 Unknown fighter jet",
-    "predicted_category": "Unknown"
+    "predicted_category": "Combat Aircraft"
   },
   {
     "system": "2 Unknown fighter/strike aircraft",
-    "predicted_category": "Unknown"
+    "predicted_category": "Combat Aircraft"
   },
   {
     "system": "2 Unknown fuel tanker",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 Unknown helicopter",
-    "predicted_category": "Unknown"
+    "predicted_category": "Helicopter"
   },
   {
     "system": "2 Ural-4320 KT-L recovery vehicle",
@@ -8685,11 +8685,11 @@
   },
   {
     "system": "2 YAD 4442 NT",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "2 ZALA 421-16ЕM",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "2 ZiL-130 tanker",
@@ -8841,7 +8841,7 @@
   },
   {
     "system": "20 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "20 UAZ-452 van",
@@ -11373,7 +11373,7 @@
   },
   {
     "system": "3 1K148 \"Yastreb-AV\" artillery reconnaissance complex",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "3 1V18 'Klyon-1' artillery command and forward observer vehicle",
@@ -11541,7 +11541,7 @@
   },
   {
     "system": "3 Daewoo Novus",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Eleron T28ME",
@@ -11585,7 +11585,7 @@
   },
   {
     "system": "3 ITEC Skif",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "3 Il-22 airborne command post",
@@ -11597,11 +11597,11 @@
   },
   {
     "system": "3 Iveco LMV",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Iveco VM90",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 KamAZ 6x4",
@@ -11665,7 +11665,7 @@
   },
   {
     "system": "3 LuAZ-969",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "3 M1132 Stryker Engineering Squad Vehicle",
@@ -11701,7 +11701,7 @@
   },
   {
     "system": "3 MRS-BT tank repair workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 MT-LB with 100mm MT-12 anti-tank gun",
@@ -11713,7 +11713,7 @@
   },
   {
     "system": "3 MTO-AT mobile workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Mara-2M",
@@ -11729,11 +11729,11 @@
   },
   {
     "system": "3 Oncilla",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Orlan-10 jamming UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "3 P-18-2 2D VHF surveillance radar",
@@ -11757,15 +11757,15 @@
   },
   {
     "system": "3 Palantin EW system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "3 Panthera T6",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Penguin C",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "3 Pinzgauer Vector 718",
@@ -11773,11 +11773,11 @@
   },
   {
     "system": "3 Primoco One 150",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "3 Project KS-701 'Tunets' coast guard patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "3 R-149BMRg command and signals vehicle",
@@ -11797,11 +11797,11 @@
   },
   {
     "system": "3 Remdiesel Z-STS Akhmat",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 River link pontoon (for floating unified railway bridge-ribbon MLZh-VF-VT)",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "3 Roshel Senator",
@@ -11901,7 +11901,7 @@
   },
   {
     "system": "3 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "3 Tu-22M3 strategic bomber",
@@ -11913,7 +11913,7 @@
   },
   {
     "system": "3 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "3 Unknown BMP-1/2 675-sb3KDZ",
@@ -11921,7 +11921,7 @@
   },
   {
     "system": "3 Unknown EW system",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "3 Unknown HMMWV variant",
@@ -11949,7 +11949,7 @@
   },
   {
     "system": "3 Unknown fighter jet",
-    "predicted_category": "Unknown"
+    "predicted_category": "Combat Aircraft"
   },
   {
     "system": "3 Unknown heavy mortar",
@@ -11973,7 +11973,7 @@
   },
   {
     "system": "3 Zhuk class patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "3 ZiL-131 tanker",
@@ -14113,7 +14113,7 @@
   },
   {
     "system": "4 1K148 \"Yastreb-AV\" artillery reconnaissance complex",
-    "predicted_category": "Unknown"
+    "predicted_category": "Electronic Warfare and Command System"
   },
   {
     "system": "4 1L259 (for Zoopark-1 counter-battery radar complex)",
@@ -14245,7 +14245,7 @@
   },
   {
     "system": "4 ITEC Skif",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "4 International M1224 MaxxPro",
@@ -14253,7 +14253,7 @@
   },
   {
     "system": "4 Iveco LMV",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 KamAZ 8x8 with armoured cabin",
@@ -14285,7 +14285,7 @@
   },
   {
     "system": "4 LuAZ-969",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "4 M1132 Stryker Engineering Squad Vehicle",
@@ -14313,7 +14313,7 @@
   },
   {
     "system": "4 MRS-BT tank repair workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 MT-LB with ZU-23 AA gun",
@@ -14325,11 +14325,11 @@
   },
   {
     "system": "4 MTO-AT mobile workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 MTP-A2.1 recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 MTU-72 bridge layer",
@@ -14353,7 +14353,7 @@
   },
   {
     "system": "4 Penguin C",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "4 Pinzgauer Vector 718",
@@ -14373,7 +14373,7 @@
   },
   {
     "system": "4 Remdiesel Z-STS Akhmat",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 Roshel Senator",
@@ -14421,7 +14421,7 @@
   },
   {
     "system": "4 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "4 Tu-22M3 strategic bomber",
@@ -14429,11 +14429,11 @@
   },
   {
     "system": "4 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "4 UAZ-394511 ‘Esaul’",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "4 Unknown BMP-1/2 675-sb3KDZ",
@@ -14477,7 +14477,7 @@
   },
   {
     "system": "4 Unknown fuel tanker",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "4 Unknown radar",
@@ -14513,7 +14513,7 @@
   },
   {
     "system": "4 Zhuk-class patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "4 ZiL-131 tanker",
@@ -15841,7 +15841,7 @@
   },
   {
     "system": "5 'Orlan-20' ''Kartograf'' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "5 100mm MT-12 anti-tank gun",
@@ -15985,7 +15985,7 @@
   },
   {
     "system": "5 Iveco LMV",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "5 KamAZ 8x8 with armoured cabin",
@@ -16049,11 +16049,11 @@
   },
   {
     "system": "5 MTO-AT mobile workshop",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "5 MTP-A2.1 recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "5 Mara-2M",
@@ -16073,7 +16073,7 @@
   },
   {
     "system": "5 Project 03160 Raptor class patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "5 R-934B 'Sinitsa' automated jamming station",
@@ -16081,7 +16081,7 @@
   },
   {
     "system": "5 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "5 RKhM-6 CBRN reconnaissance vehicle",
@@ -16089,7 +16089,7 @@
   },
   {
     "system": "5 Remdiesel Z-STS Akhmat",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "5 Roshel Senator",
@@ -16113,7 +16113,7 @@
   },
   {
     "system": "5 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "5 UAZ Patriot jeep",
@@ -16121,11 +16121,11 @@
   },
   {
     "system": "5 UAZ-394511 ‘Esaul’",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "5 UMS-1000 patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "5 Unknown HMMWV variant",
@@ -17197,7 +17197,7 @@
   },
   {
     "system": "6 'Orlan-20' ''Kartograf'' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "6 100mm MT-12 anti-tank gun",
@@ -17293,7 +17293,7 @@
   },
   {
     "system": "6 Coastal link pontoon (for floating unified railway bridge-ribbon MLZh-VF-VT)",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "6 Cougar H",
@@ -17389,11 +17389,11 @@
   },
   {
     "system": "6 Penguin C",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "6 Project 50030 Kalkan-class patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "6 R-149AKSh-1 command and signals vehicle",
@@ -17409,7 +17409,7 @@
   },
   {
     "system": "6 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "6 Roshel Senator",
@@ -17445,7 +17445,7 @@
   },
   {
     "system": "6 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "6 UAZ Patriot jeep",
@@ -17457,7 +17457,7 @@
   },
   {
     "system": "6 UMS-1000 patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "6 Unknown HMMWV variant",
@@ -17501,7 +17501,7 @@
   },
   {
     "system": "6 ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "6 ZALA 421-16Е2 reconnaissance UAV",
@@ -17513,7 +17513,7 @@
   },
   {
     "system": "6 Zhuk-class patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "60 120mm 2S9 Nona",
@@ -17569,7 +17569,7 @@
   },
   {
     "system": "60 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "600 Ural-4320",
@@ -17701,7 +17701,7 @@
   },
   {
     "system": "61 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "610 BTR-82A(M)",
@@ -17813,7 +17813,7 @@
   },
   {
     "system": "62 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "620 BTR-82A(M)",
@@ -18197,7 +18197,7 @@
   },
   {
     "system": "65 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "650 BTR-82A(M)",
@@ -18325,7 +18325,7 @@
   },
   {
     "system": "66 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "660 BTR-82A(M)",
@@ -18453,7 +18453,7 @@
   },
   {
     "system": "67 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "670 BMP-2(K)",
@@ -18597,7 +18597,7 @@
   },
   {
     "system": "68 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "681 BMP-2(K)",
@@ -18717,7 +18717,7 @@
   },
   {
     "system": "69 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "691 BMP-2(K)",
@@ -18941,7 +18941,7 @@
   },
   {
     "system": "7 Penguin C",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "7 R-149AKSh-1 command and signals vehicle",
@@ -18957,7 +18957,7 @@
   },
   {
     "system": "7 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "7 Roshel Senator",
@@ -18993,11 +18993,11 @@
   },
   {
     "system": "7 Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "7 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "7 UAZ-452 van",
@@ -19037,7 +19037,7 @@
   },
   {
     "system": "7 ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "7 ZSU-23-4 Shilka",
@@ -19229,7 +19229,7 @@
   },
   {
     "system": "71 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "71 ZiL-131",
@@ -19333,7 +19333,7 @@
   },
   {
     "system": "72 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "72 ZiL-131",
@@ -19409,7 +19409,7 @@
   },
   {
     "system": "73 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "731 KamAZ 6x6",
@@ -19513,7 +19513,7 @@
   },
   {
     "system": "74 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "74 ZiL-131",
@@ -19605,7 +19605,7 @@
   },
   {
     "system": "75 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "75 ZiL-131",
@@ -19705,7 +19705,7 @@
   },
   {
     "system": "76 ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "76 ZiL-131",
@@ -19917,7 +19917,7 @@
   },
   {
     "system": "78 ZALA Z-16 (421-16Е)",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "781 Ural-4320",
@@ -20041,7 +20041,7 @@
   },
   {
     "system": "79 ZALA Z-16 (421-16Е)",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "790 KamAZ 6x6",
@@ -20065,7 +20065,7 @@
   },
   {
     "system": "8 'Orlan-20' ''Kartograf'' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "8 100mm MT-12 anti-tank gun",
@@ -20233,7 +20233,7 @@
   },
   {
     "system": "8 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "8 Roshel Senator",
@@ -20269,11 +20269,11 @@
   },
   {
     "system": "8 UAZ-3303",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "8 UAZ-39094",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "8 UAZ-452 van",
@@ -20305,7 +20305,7 @@
   },
   {
     "system": "8 ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "80 122mm 2S1 Gvozdika",
@@ -20369,7 +20369,7 @@
   },
   {
     "system": "80 ZALA Z-16 (421-16Е)",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "800 KamAZ 6x6",
@@ -21017,7 +21017,7 @@
   },
   {
     "system": "87 ZALA Z-16 (421-16Е)",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "877 KamAZ 6x6",
@@ -21185,11 +21185,11 @@
   },
   {
     "system": "9 'Orlan-20' ''Kartograf''",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "9 'Orlan-20' ''Kartograf'' reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "9 100mm MT-12 anti-tank gun",
@@ -21373,7 +21373,7 @@
   },
   {
     "system": "9 REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "9 RKhM-6 Povozka CBRN reconnaissance vehicle",
@@ -21417,7 +21417,7 @@
   },
   {
     "system": "9 UAZ-3303",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "9 UAZ-452 van",
@@ -21445,7 +21445,7 @@
   },
   {
     "system": "9 ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "9 ZiL-131",
@@ -21497,7 +21497,7 @@
   },
   {
     "system": "90 Orlan-10 reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "90 T-64BV",
@@ -21609,7 +21609,7 @@
   },
   {
     "system": "91 Orlan-10 reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "91 T-62M",
@@ -22777,7 +22777,7 @@
   },
   {
     "system": "Airbus H225 transport helicopter",
-    "predicted_category": "Unknown"
+    "predicted_category": "Helicopter"
   },
   {
     "system": "Alvis 4 'Mamba'",
@@ -22845,15 +22845,15 @@
   },
   {
     "system": "BMM-4C Ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "BMM-4S Ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "BMM-70 Ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "BMO-T",
@@ -23141,7 +23141,7 @@
   },
   {
     "system": "DAF YAD 4442 NT",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Dovbush T10",
@@ -23293,27 +23293,27 @@
   },
   {
     "system": "Island class patrol boat P190 Slovyansk",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Island-class patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Island-class patrol boat P190 Slovyansk",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Iveco LMV",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Iveco LMV 'Rys'",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Iveco LMV Rys",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Jelcz P882 D53",
@@ -23337,7 +23337,7 @@
   },
   {
     "system": "KT-L recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "KTO Rosomak",
@@ -23653,7 +23653,7 @@
   },
   {
     "system": "Mercedes-Benz Unimog U1300L ambulance",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Merlin-VR",
@@ -23749,27 +23749,27 @@
   },
   {
     "system": "Orlan-10",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Orlan-10 UCAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Orlan-10 jamming UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Orlan-10 reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Orlan-30",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Orlan-30 reconnaissance UAV",
-    "predicted_category": "Support Aircraft"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Oshkosh M-ATV",
@@ -23877,7 +23877,7 @@
   },
   {
     "system": "Project 03160 Raptor class patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Project 1164 Slava class guided missile cruiser 'Moskva'",
@@ -23909,7 +23909,7 @@
   },
   {
     "system": "Project 640 small patrol boat",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Project 775 Ropucha class landing ship",
@@ -23985,7 +23985,7 @@
   },
   {
     "system": "REM-KL recovery vehicle",
-    "predicted_category": "Unknown Vehicle"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "RK-3 Corsar",
@@ -24001,7 +24001,7 @@
   },
   {
     "system": "Remdiesel Z-STS Akhmat",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Repeynik portable counter-UAS radar",
@@ -24041,7 +24041,7 @@
   },
   {
     "system": "Small patrol boats (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Sorum class seagoing tugboat 'Korets' ''A830 or P186''",
@@ -24069,7 +24069,7 @@
   },
   {
     "system": "Stenka class patrol boat (Operated by the Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "Stridsvagn 122",
@@ -24325,7 +24325,7 @@
   },
   {
     "system": "Tekever AR3",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "Torn(-MDM)",
@@ -24369,7 +24369,7 @@
   },
   {
     "system": "UAZ-23632",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "UAZ-23632 pickup truck",
@@ -24381,7 +24381,7 @@
   },
   {
     "system": "UAZ-452",
-    "predicted_category": "Unknown"
+    "predicted_category": "Unknown Vehicle"
   },
   {
     "system": "UAZ-452 van",
@@ -24513,7 +24513,7 @@
   },
   {
     "system": "Unknown fuel tanker",
-    "predicted_category": "Unknown"
+    "predicted_category": "Support Vehicle"
   },
   {
     "system": "Unknown heavy mortar",
@@ -24521,7 +24521,7 @@
   },
   {
     "system": "Unknown helicopter",
-    "predicted_category": "Unknown"
+    "predicted_category": "Helicopter"
   },
   {
     "system": "Unknown reconnaissance UAV",
@@ -24657,11 +24657,11 @@
   },
   {
     "system": "ZALA 421-16Е",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "ZALA 421-16Е2",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "ZALA 421-16Е2 reconnaissance UAV",
@@ -24669,7 +24669,7 @@
   },
   {
     "system": "ZALA Aero KUB-BLA loitering munition",
-    "predicted_category": "Unknown"
+    "predicted_category": "UAV/Drone"
   },
   {
     "system": "ZSU-23-4 'Shilka'",
@@ -24681,7 +24681,7 @@
   },
   {
     "system": "Zhuk class patrol boat (Sea Guard)",
-    "predicted_category": "Small Surface Combatant"
+    "predicted_category": "Naval Vessel"
   },
   {
     "system": "ZiL-130",
