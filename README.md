@@ -10,25 +10,5 @@ is merged with the class data from
 # TOC
 
 - dbt - dbt transformations to explore the dataset with postgreSQL
-- panel+pandas - the first exploration of the dataset, using panel and pandas.
+- panel-V1 - the first exploration of the dataset, using panel and pandas.
 
-## dbt
-
-Data transformations and enrichment project with dbt and postgreSQL
-
-## Panel dashboard
-
-My first pass through the dataset resulted in the panel dashboard, leveraging pandas for the analysis.  The dbt sub-project is doing similar work with dbt.
-
-
-This dashboard uses [panel by holoviz](https://panel.holoviz.org/) and the [hvPlot](https://hvplot.holoviz.org/) [pandas](https://pandas.pydata.org/) extension.
-
-To start the dashboard, open your terminal, navigate to a good folder and
-execute these commands:
-
-    git clone https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses.git
-    cd RussiaUkraineWarEquipmentLosses
-    python3 -m venv .venv
-    source .venv/bin/activate
-    pip3 install -r requirements.txt
-    panel serve --show --autoreload RussiaUkraineWar.py
