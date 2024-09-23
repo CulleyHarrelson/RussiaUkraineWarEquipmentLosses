@@ -28,6 +28,7 @@
         WHEN {{ column_name }} ~* 'T-\d+|Unknown tank' THEN 'Armored Fighting Vehicle'
         WHEN {{ column_name }} ~* 'BMP-\d+|BMD-\d+|BRM-\d+' THEN 'Armored Fighting Vehicle'
         WHEN {{ column_name }} ~* 'MT-LB|BTR-\d+' THEN 'Armored Fighting Vehicle'
+        WHEN {{ column_name }} ~* 'AAV-7|BMP-3F|Type 05' THEN 'Armored Fighting Vehicle'
 
         /* Artillery */
         WHEN {{ column_name }} ~* 'M109|PzH|CAESAR|Archer' THEN 'Artillery'
@@ -48,6 +49,7 @@
         WHEN {{ column_name }} ~* 'recovery\ vehicle|workshop|MTO-|ambulance|bathhouse|YAD\ 4442\ NT' THEN 'Support Vehicle'
         WHEN {{ column_name }} ~* 'R-\d+|1L\d+|9S\d+|forward\ observer\ vehicle|battery\ fire\ control\ center' THEN 'Support Vehicle'
         WHEN {{ column_name }} ~* 'PMP|TMM-\d+' THEN 'Support Vehicle'
+        WHEN {{ column_name }} ~* 'Uran-9|THeMIS|MUTT' THEN 'Support Vehicle'
 
         /* Naval Vessels */
         WHEN {{ column_name }} ~* 'CVN-|Admiral Kuznetsov|Queen Elizabeth' THEN 'Naval Vessel'
@@ -58,6 +60,8 @@
         WHEN {{ column_name }} ~* 'Patrol Boat|Dvora|CB90' THEN 'Naval Vessel'
         WHEN {{ column_name }} ~* 'LHD-|Mistral|Wasp' THEN 'Naval Vessel'
         WHEN {{ column_name }} ~* 'Project \d+|Class' THEN 'Naval Vessel'
+        WHEN {{ column_name }} ~* 'Avenger-class|Tripartite|Katanpää' THEN 'Naval Vessel'
+        WHEN {{ column_name }} ~* 'LCAC|LCU|Type 726' THEN 'Naval Vessel'
 
         /* Weapon Systems */
         WHEN {{ column_name }} ~* 'ZSU-23|Gepard|Tunguska' THEN 'Air Defense System'
@@ -73,16 +77,6 @@
         WHEN {{ column_name }} ~* 'AN/SPY-1|AESA|Nebo|radar|Palantin' THEN 'Electronic Warfare and Command System'
         WHEN {{ column_name }} ~* 'AWACS|E-3|A-50|Yastreb' THEN 'Electronic Warfare and Command System'
 
-
-        /* Unmanned Ground Vehicle */
-        WHEN {{ column_name }} ~* 'Uran-9|THeMIS|MUTT' THEN 'Unmanned Ground Vehicle'
-
-        /* Amphibious Vehicle */
-        WHEN {{ column_name }} ~* 'AAV-7|BMP-3F|Type 05' THEN 'Amphibious Vehicle'
-
-        /* Naval Support */
-        WHEN {{ column_name }} ~* 'Avenger-class|Tripartite|Katanpää' THEN 'Naval Support Vessel'
-        WHEN {{ column_name }} ~* 'LCAC|LCU|Type 726' THEN 'Naval Support Vessel'
 
         WHEN {{ column_name }} ~* 'van|vehicle|LuAZ|UAZ-' THEN 'Unknown Vehicle'
 
