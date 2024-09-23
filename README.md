@@ -12,3 +12,8 @@ is merged with the class data from
 - dbt - dbt transformations to explore the dataset with postgreSQL
 - panel-V1 - the first exploration of the dataset, using panel and pandas.
 
+
+[system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/dbt/data/system_category.json) categorizes the systems found in the Oryx dataset.
+
+
+
