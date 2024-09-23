@@ -15,12 +15,9 @@ is merged with the class data from
 - artifacts - the artifacts folder contains output visualizations and datasets
 - panel-V1 - the first exploration of the dataset, using panel and pandas.
 
-## oryx system categories
+## artifacts
 
-Included in this effort is an attempt to identify reasonable categories for the 
-lost equipment recorded in the oryx archive. 
-
-- [system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/system_category.json) is a generated file with categories for the oryx systems.
+- [system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/system_category.json) is a generated file with category suggestions for the oryx systems. The code attempts to identify reasonable categories for the lost equipment recorded in the oryx photo archive.
 - [cumulative_losses.html](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/cumulative_losses.html) is a generated html file with line charts visualizing the cumulative losses by country and categories. Download the file to view the embedded svg plots in your browser. This file was created in the jupyter notebook.
 
 
