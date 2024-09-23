@@ -19,6 +19,7 @@ Included in this effort is an attempt to identify reasonable categories for the
 lost equipment recorded in the oryx archive. 
 
 [system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/system_category.json) is a generated file with categories for the oryx systems.
+[cumulative_losses.html](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/cumulative_losses.html) is a generated file with line charts visualizing the cumulative losses by country and categories.
 
 
 
