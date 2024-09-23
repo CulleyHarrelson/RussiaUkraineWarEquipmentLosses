@@ -10,6 +10,7 @@ is merged with the class data from
 # TOC
 
 - dbt - dbt transformations to explore the dataset with postgreSQL
+- artifacts - the artifacts folder contains output visualizations and datasets
 - panel-V1 - the first exploration of the dataset, using panel and pandas.
 
 ## oryx system categories
@@ -17,7 +18,7 @@ is merged with the class data from
 Included in this effort is an attempt to identify reasonable categories for the 
 lost equipment recorded in the oryx archive. 
 
-[system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/dbt/json/system_category.json) is a generated file with categories for the oryx systems.
+[system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/system_category.json) is a generated file with categories for the oryx systems.
 
 
 

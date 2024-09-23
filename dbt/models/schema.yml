@@ -8,34 +8,34 @@ models:
     columns:
       - name: date_recorded
         description: "The date when the loss was recorded"
-        tests:
+        data_tests:
           - not_null
       - name: country
         description: "The country where the loss occurred"
-        tests:
+        data_tests:
           - not_null
           - accepted_values:
-              values: ["USA", "Canada", "Mexico"] # Example list of countries
+              values: ["Russia", "Ukraine"] # Example list of countries
       - name: predicted_category
         description: "The category of the lost equipment"
-        tests:
+        data_tests:
           - not_null
           - relationships:
               to: ref('distinct_categories')
               field: predicted_category
       - name: daily_loss_count
         description: "The number of equipment losses on this specific date"
-        tests:
+        data_tests:
           - not_null
           - dbt_utils.expression_is_true:
               expression: "> 0"
       - name: cumulative_loss_count
         description: "The total number of equipment losses up to and including this date"
-        tests:
+        data_tests:
           - not_null
           - dbt_utils.expression_is_true:
               expression: "> 0"
-    tests:
+    data_tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - date_recorded
@@ -50,9 +50,6 @@ models:
     columns:
       - name: predicted_category
         description: "Unique categories of equipment"
-        tests:
+        data_tests:
           - not_null
           - unique
-    meta:
-      owner: "data_team@example.com"
-      updated_at: "2023-09-23"
