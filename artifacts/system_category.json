@@ -52,7 +52,7 @@
     "predicted_category": "Artillery"
   },
   {
-    "system": "1 120mm self-propelled gun М1064А3",
+    "system": "1 120mm self-propelled gun \u041c1064\u04103",
     "predicted_category": "Unknown"
   },
   {
@@ -232,7 +232,7 @@
     "predicted_category": "Air Defense System"
   },
   {
-    "system": "1 5N63S “Flap Lid B” engagement and tracking radar of the S-300",
+    "system": "1 5N63S \u201cFlap Lid B\u201d engagement and tracking radar of the S-300",
     "predicted_category": "Air Defense System"
   },
   {
@@ -1684,7 +1684,7 @@
     "predicted_category": "Unknown Vehicle"
   },
   {
-    "system": "1 ZSA-Т Armoured Ambulance",
+    "system": "1 ZSA-\u0422 Armoured Ambulance",
     "predicted_category": "Support Vehicle"
   },
   {
@@ -1920,7 +1920,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "10 ZALA 421-16Е2",
+    "system": "10 ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -7804,7 +7804,7 @@
     "predicted_category": "Artillery"
   },
   {
-    "system": "2 120mm М1064А3",
+    "system": "2 120mm \u041c1064\u04103",
     "predicted_category": "Unknown"
   },
   {
@@ -7908,7 +7908,7 @@
     "predicted_category": "Air Defense System"
   },
   {
-    "system": "2 5N63S “Flap Lid B” engagement and tracking radar of the S-300",
+    "system": "2 5N63S \u201cFlap Lid B\u201d engagement and tracking radar of the S-300",
     "predicted_category": "Air Defense System"
   },
   {
@@ -8608,7 +8608,7 @@
     "predicted_category": "Unknown Vehicle"
   },
   {
-    "system": "2 UAZ-394511 ‘Esaul’",
+    "system": "2 UAZ-394511 \u2018Esaul\u2019",
     "predicted_category": "Unknown Vehicle"
   },
   {
@@ -8688,7 +8688,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "2 ZALA 421-16ЕM",
+    "system": "2 ZALA 421-16\u0415M",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -11328,7 +11328,7 @@
     "predicted_category": "Artillery"
   },
   {
-    "system": "3 120mm М1064А3",
+    "system": "3 120mm \u041c1064\u04103",
     "predicted_category": "Unknown"
   },
   {
@@ -14072,7 +14072,7 @@
     "predicted_category": "Artillery"
   },
   {
-    "system": "4 120mm М1064А3",
+    "system": "4 120mm \u041c1064\u04103",
     "predicted_category": "Unknown"
   },
   {
@@ -14432,7 +14432,7 @@
     "predicted_category": "Unknown Vehicle"
   },
   {
-    "system": "4 UAZ-394511 ‘Esaul’",
+    "system": "4 UAZ-394511 \u2018Esaul\u2019",
     "predicted_category": "Unknown Vehicle"
   },
   {
@@ -16120,7 +16120,7 @@
     "predicted_category": "Air Defense System"
   },
   {
-    "system": "5 UAZ-394511 ‘Esaul’",
+    "system": "5 UAZ-394511 \u2018Esaul\u2019",
     "predicted_category": "Unknown Vehicle"
   },
   {
@@ -17500,11 +17500,11 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "6 ZALA 421-16Е2",
+    "system": "6 ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
-    "system": "6 ZALA 421-16Е2 reconnaissance UAV",
+    "system": "6 ZALA 421-16\u04152 reconnaissance UAV",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -17568,7 +17568,7 @@
     "predicted_category": "Armored Fighting Vehicle"
   },
   {
-    "system": "60 ZALA 421-16Е",
+    "system": "60 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -17700,7 +17700,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "61 ZALA 421-16Е",
+    "system": "61 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -17812,7 +17812,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "62 ZALA 421-16Е",
+    "system": "62 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -18196,7 +18196,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "65 ZALA 421-16Е",
+    "system": "65 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -18324,7 +18324,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "66 ZALA 421-16Е",
+    "system": "66 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -18452,7 +18452,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "67 ZALA 421-16Е",
+    "system": "67 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -18596,7 +18596,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "68 ZALA 421-16Е",
+    "system": "68 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -18716,7 +18716,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "69 ZALA 421-16Е",
+    "system": "69 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19036,7 +19036,7 @@
     "predicted_category": "Armored Fighting Vehicle"
   },
   {
-    "system": "7 ZALA 421-16Е2",
+    "system": "7 ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19228,7 +19228,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "71 ZALA 421-16Е",
+    "system": "71 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19332,7 +19332,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "72 ZALA 421-16Е",
+    "system": "72 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19408,7 +19408,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "73 ZALA 421-16Е",
+    "system": "73 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19512,7 +19512,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "74 ZALA 421-16Е",
+    "system": "74 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19604,7 +19604,7 @@
     "predicted_category": "Unknown Vehicle"
   },
   {
-    "system": "75 ZALA 421-16Е",
+    "system": "75 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19704,7 +19704,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "76 ZALA 421-16Е",
+    "system": "76 ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -19916,7 +19916,7 @@
     "predicted_category": "Support Aircraft"
   },
   {
-    "system": "78 ZALA Z-16 (421-16Е)",
+    "system": "78 ZALA Z-16 (421-16\u0415)",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -20040,7 +20040,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "79 ZALA Z-16 (421-16Е)",
+    "system": "79 ZALA Z-16 (421-16\u0415)",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -20304,7 +20304,7 @@
     "predicted_category": "Armored Fighting Vehicle"
   },
   {
-    "system": "8 ZALA 421-16Е2",
+    "system": "8 ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -20368,7 +20368,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "80 ZALA Z-16 (421-16Е)",
+    "system": "80 ZALA Z-16 (421-16\u0415)",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -21016,7 +21016,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "87 ZALA Z-16 (421-16Е)",
+    "system": "87 ZALA Z-16 (421-16\u0415)",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -21444,7 +21444,7 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "9 ZALA 421-16Е2",
+    "system": "9 ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
@@ -23088,7 +23088,7 @@
     "predicted_category": "Unknown"
   },
   {
-    "system": "Barnaul-T 9С932-1 automated system for air defence units",
+    "system": "Barnaul-T 9\u0421932-1 automated system for air defence units",
     "predicted_category": "Unknown"
   },
   {
@@ -24656,15 +24656,15 @@
     "predicted_category": "Support Vehicle"
   },
   {
-    "system": "ZALA 421-16Е",
+    "system": "ZALA 421-16\u0415",
     "predicted_category": "UAV/Drone"
   },
   {
-    "system": "ZALA 421-16Е2",
+    "system": "ZALA 421-16\u04152",
     "predicted_category": "UAV/Drone"
   },
   {
-    "system": "ZALA 421-16Е2 reconnaissance UAV",
+    "system": "ZALA 421-16\u04152 reconnaissance UAV",
     "predicted_category": "UAV/Drone"
   },
   {

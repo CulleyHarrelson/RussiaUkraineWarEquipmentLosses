@@ -50,4 +50,4 @@ for MODEL in "${MODELS[@]}"; do
     echo "Completed $MODEL. Formatted JSON file saved as ../artifacts/$MODEL.json"
 done
 
-echo "All conversions complete."
+echo "Artifacts created."
