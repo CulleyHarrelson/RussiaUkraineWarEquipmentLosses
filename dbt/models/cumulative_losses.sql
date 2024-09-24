@@ -9,6 +9,7 @@ WITH daily_losses AS (
     FROM {{ ref('equipment_analysis') }}
     GROUP BY date_recorded, country, predicted_category
 ),
+
 country_daily_losses AS (
     SELECT
         date_recorded,
@@ -17,6 +18,7 @@ country_daily_losses AS (
     FROM daily_losses
     GROUP BY date_recorded, country
 ),
+
 cumulative_losses AS (
     SELECT
         date_recorded,
@@ -30,6 +32,7 @@ cumulative_losses AS (
         ) AS cumulative_loss_count
     FROM daily_losses
 ),
+
 country_cumulative_losses AS (
     SELECT
         date_recorded,
@@ -42,6 +45,7 @@ country_cumulative_losses AS (
         ) AS country_cumulative_loss_count
     FROM country_daily_losses
 )
+
 SELECT
     cumulative_losses.date_recorded,
     cumulative_losses.country,
@@ -51,7 +55,12 @@ SELECT
     country_cumulative_losses.country_daily_loss_count,
     country_cumulative_losses.country_cumulative_loss_count
 FROM cumulative_losses
-JOIN country_cumulative_losses
-    ON cumulative_losses.date_recorded = country_cumulative_losses.date_recorded
-    AND cumulative_losses.country = country_cumulative_losses.country
-ORDER BY cumulative_losses.country, cumulative_losses.predicted_category, cumulative_losses.date_recorded
+INNER JOIN country_cumulative_losses
+    ON
+        cumulative_losses.date_recorded
+        = country_cumulative_losses.date_recorded
+        AND cumulative_losses.country = country_cumulative_losses.country
+ORDER BY
+    cumulative_losses.country,
+    cumulative_losses.predicted_category,
+    cumulative_losses.date_recorded
