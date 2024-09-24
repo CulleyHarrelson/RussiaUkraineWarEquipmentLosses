@@ -43,15 +43,15 @@ country_cumulative_losses AS (
     FROM country_daily_losses
 )
 SELECT
-    cl.date_recorded,
-    cl.country,
-    cl.predicted_category,
-    cl.daily_loss_count,
-    cl.cumulative_loss_count,
-    ccl.country_daily_loss_count,
-    ccl.country_cumulative_loss_count
-FROM cumulative_losses cl
-JOIN country_cumulative_losses ccl
-    ON cl.date_recorded = ccl.date_recorded
-    AND cl.country = ccl.country
-ORDER BY cl.country, cl.predicted_category, cl.date_recorded
+    cumulative_losses.date_recorded,
+    cumulative_losses.country,
+    cumulative_losses.predicted_category,
+    cumulative_losses.daily_loss_count,
+    cumulative_losses.cumulative_loss_count,
+    country_cumulative_losses.country_daily_loss_count,
+    country_cumulative_losses.country_cumulative_loss_count
+FROM cumulative_losses
+JOIN country_cumulative_losses
+    ON cumulative_losses.date_recorded = country_cumulative_losses.date_recorded
+    AND cumulative_losses.country = country_cumulative_losses.country
+ORDER BY cumulative_losses.country, cumulative_losses.predicted_category, cumulative_losses.date_recorded
