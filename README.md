@@ -20,7 +20,7 @@ is merged with the class data from
 These files are created by [scripts/create_artifacts.py](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/scripts/create_artifacts.py)
 
 - [system_category.json](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/system_category.json) is a json dataset with category suggestions for the oryx systems.
-- [cumulative_losses.html](https://github.com/CulleyHarrelson/RussiaUkraineWarEquipmentLosses/blob/main/artifacts/cumulative_losses.html) is a html file with embedded svg line charts visualizing the cumulative equipment losses by country/categories. Download the file to view in your browser.
+- [cumulative_losses.html](https://culleyharrelson.github.io/RussiaUkraineWarEquipmentLosses/artifacts/cumulative_losses.html) is a html file with embedded svg line charts visualizing the cumulative equipment losses by country/categories. Download the file to view in your browser.
 
 
 
